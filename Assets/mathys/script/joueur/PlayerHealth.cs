@@ -4,6 +4,7 @@ public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
+    private Controller controlle;
 
     public HealthBar healthbar;
 
@@ -11,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
     {
        currentHealth = maxHealth;
        healthbar. SetMaxHealth(maxHealth);
+       controlle = GetComponent<Controller>();
     }
 
     void Update()
@@ -37,7 +39,13 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("nn");
         GameOverManager.instance.OnPlayerDeath();
+        controlle.enabled = false;
     }
 
+    public void Revive()
+    {
+        controlle.enabled = true;
+        currentHealth = maxHealth;
+    }
 }
  

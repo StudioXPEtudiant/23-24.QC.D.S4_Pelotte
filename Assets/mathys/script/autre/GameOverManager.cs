@@ -5,6 +5,8 @@ public class GameOverManager : MonoBehaviour
 {
     public GameObject gameOverUI;
     public static GameOverManager instance;
+    //public PlayerHealth playervie;
+    public string mainMenu;
 
     private void Awake()
     {
@@ -27,11 +29,12 @@ public class GameOverManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         gameOverUI.SetActive(false);
+
     }
 
     public void MainMenuButton()
     {
-        
+        SceneManager.LoadScene(mainMenu);
     }
 
     public void QuitButton()
