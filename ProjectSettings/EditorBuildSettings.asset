@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/mathys/SC_Mathys.unity
+    guid: c863b4ad4cb8109489bca3decbeee760
+  - enabled: 1
+    path: Assets/mathys/main menu.unity
+    guid: 6b6c233d6edda5148a33b70eaae3f249
   m_configObjects: {}
