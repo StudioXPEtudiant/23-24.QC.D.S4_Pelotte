@@ -2,7 +2,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class CharacterShopUI : MonoBehaviour
-{
+{ 
+    [SerializeField] GameObject ShopPanel;
+    [SerializeField] Transform shopMenu;
+    [SerializeField] Transform ShopContainer;
+
+    
     [SerializeField] Button openShopButton;
     [SerializeField] Button closeShopButton;
     [SerializeField] GameObject shopUI;

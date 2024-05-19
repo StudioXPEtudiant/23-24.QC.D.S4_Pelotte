@@ -1665,6 +1665,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin
       objectReference: {fileID: 0}
+    - target: {fileID: 1702562795787331725, guid: cd7165306ae80ba4485188dc3f6aaec7, type: 3}
+      propertyPath: m_TagString
+      value: Coin
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd7165306ae80ba4485188dc3f6aaec7, type: 3}
 --- !u!1001 &941315677
@@ -1833,7 +1837,7 @@ GameObject:
   - component: {fileID: 972023296}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1852,6 +1856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 920288475}
   mainMenu: main menu
+  coins: {fileID: 1743918547}
 --- !u!4 &972023295
 Transform:
   m_ObjectHideFlags: 0

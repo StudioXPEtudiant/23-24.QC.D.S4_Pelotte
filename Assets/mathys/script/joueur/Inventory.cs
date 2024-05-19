@@ -10,14 +10,18 @@ public class Inventory : MonoBehaviour
 
     private void Awake()
     {
-        if(instance != null)
+        if(instance != null && instance != this)
         {
             Debug.LogWarning("nn");
+            Destroy(this.gameObject);
             return;
         }
-
-        instance = this;
-
+        else
+        {
+            instance = this;
+        }
+        DontDestroyOnLoad(this.gameObject);
+        coinsCountText = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameOverManager>().coins;
     }
 
     public void AddCoins(int count)

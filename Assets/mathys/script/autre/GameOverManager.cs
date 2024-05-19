@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameOverManager : MonoBehaviour
@@ -7,6 +8,7 @@ public class GameOverManager : MonoBehaviour
     public static GameOverManager instance;
     //public PlayerHealth playervie;
     public string mainMenu;
+    public Text coins;
 
     private void Awake()
     {
