@@ -241,7 +241,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2883704070704244784}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.4717, y: 1.4784, z: 0}
   m_LocalScale: {x: 5.3514, y: 4.8824, z: 1}
   m_ConstrainProportionsScale: 0
@@ -353,7 +353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2d: {fileID: 2883704070704244788}
   Speed: 5
-  jumpSpeed: 5
+  jumpSpeed: 8
 --- !u!61 &3117192996422393187
 BoxCollider2D:
   m_ObjectHideFlags: 0

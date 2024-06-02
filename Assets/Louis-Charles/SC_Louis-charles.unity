@@ -2021,5 +2021,9 @@ PrefabInstance:
       propertyPath: healthbar
       value: 
       objectReference: {fileID: 489984185}
+    - target: {fileID: 3117192996422393189, guid: a3d9f4bf550e8da47883fef9a7e3ccaf, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5feee6f8cb03187419c9dfe66542248f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3d9f4bf550e8da47883fef9a7e3ccaf, type: 3}
