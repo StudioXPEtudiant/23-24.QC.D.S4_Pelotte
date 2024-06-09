@@ -900,10 +900,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1504889391}
-        m_TargetAssemblyTypeName: ShopMoi, Assembly-CSharp
-        m_MethodName: CloseShop
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -959,6 +959,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 340415932}
+  - component: {fileID: 340415933}
   m_Layer: 5
   m_Name: Shop UI
   m_TagString: Untagged
@@ -987,6 +988,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &340415933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340415931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f6f0ff08a5ffa646926c03e3daba6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openShopButton: {fileID: 1960238595}
+  closeShopButton: {fileID: 296071134}
+  shopUI: {fileID: 1504889387}
 --- !u!1 &446697927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,7 +1382,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Play
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &711871271
@@ -2100,7 +2116,6 @@ GameObject:
   - component: {fileID: 1504889388}
   - component: {fileID: 1504889390}
   - component: {fileID: 1504889389}
-  - component: {fileID: 1504889391}
   m_Layer: 5
   m_Name: shop dark panel
   m_TagString: Untagged
@@ -2167,19 +2182,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1504889387}
   m_CullTransparentMesh: 1
---- !u!114 &1504889391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1504889387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c4d614fa841d9043b0c395f762c4e42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShopUI: {fileID: 340415931}
 --- !u!1 &1516037586
 GameObject:
   m_ObjectHideFlags: 0
@@ -2350,7 +2352,6 @@ GameObject:
   - component: {fileID: 1587209318}
   - component: {fileID: 1587209317}
   - component: {fileID: 1587209320}
-  - component: {fileID: 1587209321}
   m_Layer: 5
   m_Name: shop item
   m_TagString: Untagged
@@ -2517,19 +2518,6 @@ MonoBehaviour:
   items:
   - itemName: tonouis
     price: 1
---- !u!114 &1587209321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587209313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c4d614fa841d9043b0c395f762c4e42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShopUI: {fileID: 1587209313}
 --- !u!1 &1593292077
 GameObject:
   m_ObjectHideFlags: 0
@@ -2580,7 +2568,6 @@ GameObject:
   - component: {fileID: 1667704473}
   - component: {fileID: 1667704476}
   - component: {fileID: 1667704475}
-  - component: {fileID: 1667704477}
   - component: {fileID: 1667704474}
   m_Layer: 5
   m_Name: purchase button
@@ -2654,31 +2641,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1667704475}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1667704477}
-        m_TargetAssemblyTypeName: AchaMoi, Assembly-CSharp
-        m_MethodName: AchaS
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1587209321}
-        m_TargetAssemblyTypeName: ShopMoi, Assembly-CSharp
-        m_MethodName: CloseShop
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1667704475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2717,19 +2680,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667704472}
   m_CullTransparentMesh: 1
---- !u!114 &1667704477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1667704472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a9579b544f89d14d9a1b4fbc87c5a4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Acha: {fileID: 1667704472}
 --- !u!1 &1728940260
 GameObject:
   m_ObjectHideFlags: 0
@@ -2926,7 +2876,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 585188cdc4600544eb408bee749e4b3a, type: 3}
+    m_Font: {fileID: 12800000, guid: 652f7165b7c30ab46af6c4aad90a639b, type: 2}
     m_FontSize: 200
     m_FontStyle: 0
     m_BestFit: 0
@@ -3116,10 +3066,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1504889391}
-        m_TargetAssemblyTypeName: ShopMoi, Assembly-CSharp
-        m_MethodName: OpenShop
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
