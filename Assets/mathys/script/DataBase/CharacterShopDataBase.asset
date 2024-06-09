@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7691dc2a82408241aa761c3f7f83217, type: 3}
+  m_Name: CharacterShopDataBase
+  m_EditorClassIdentifier: 
+  Characters:
+  - image: {fileID: 2037447903, guid: 5767e0e5698412849bac1bde543c8fb7, type: 3}
+    name: cat
+    speed: 20
+    power: 10
+    price: 0
+    isPurchased: 1
+  - image: {fileID: 1897055379, guid: 29e21165cb3ae334d969d4be634eaa9e, type: 3}
+    name: tonouis
+    speed: 25
+    power: 15
+    price: 1
+    isPurchased: 0
