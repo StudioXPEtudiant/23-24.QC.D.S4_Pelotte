@@ -8,13 +8,13 @@ public class PickUpObject : MonoBehaviour
    {
     if (collision.CompareTag("Player"))
      {
-      Inventory.instance.AddCoins(1);
+      moi.instance.AddCoins(1);
       Destroy(gameObject);
      }
 
     if (Input.GetKeyDown(KeyCode.J))
       {
-      Inventory.instance.AddCoins(1);
+      moi.instance.AddCoins(1);
       }
    }
 }

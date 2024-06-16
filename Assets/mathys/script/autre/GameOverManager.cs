@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOverManager : MonoBehaviour
 {
+    [SerializeField] GameObject Shop;
     public GameObject gameOverUI;
     public static GameOverManager instance;
     //public PlayerHealth playervie;
@@ -29,14 +30,12 @@ public class GameOverManager : MonoBehaviour
 
     public void RetryButton()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         gameOverUI.SetActive(false);
-
     }
 
     public void MainMenuButton()
     {
-        SceneManager.LoadScene(mainMenu);
+        Shop.SetActive (true);
     }
 
     public void QuitButton()

@@ -3,10 +3,16 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
+    public int CurrentCoins;
     public int coinsCount;
     public Text coinsCountText;
 
     public static Inventory instance;
+
+    void Start()
+    {
+        CurrentCoins = coinsCount;
+    }
 
     private void Awake()
     {
@@ -26,6 +32,7 @@ public class Inventory : MonoBehaviour
 
     public void AddCoins(int count)
     {
+        CurrentCoins += count;
         coinsCount += count;
         coinsCountText.text = coinsCount.ToString();
     }
